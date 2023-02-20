@@ -6,7 +6,7 @@ public class PrimitivesDemo {
 
     void run() {
         byte temperature = 127;  //   8  bits = -128..127
-        short colorTemp = 32000; //  16  bits = -32000..32000
+        short colorTemp = 32000; //  16  bits = -32768..32767
         char letter = 'a';       //  16  bits =  0..65535
         char number = 65000;
         char maxValue = (char) 65536; // overflow!!
@@ -14,6 +14,7 @@ public class PrimitivesDemo {
         long grootGetal = 9223372036854775800L; //  64  bits = -(heelveel-1)..heelveel
         float koorts = 37.8F; // 32 bits floating point = ???
         double koorts2 = 37.8;// 64 bits floating point
+        boolean isBramGek = temperature < 5 && koorts > 38.0;
 
         // nooit double gebruiken voor geld!!
         System.out.println(0.59 + 0.33); // fout!!!
