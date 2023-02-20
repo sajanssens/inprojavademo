@@ -4,10 +4,14 @@ import java.util.Scanner;
 
 public class HelloWorld {
 
-    void print() {
+    void wieBenIk() {
         System.out.println("Hello world!");
         Scanner input = new Scanner(System.in);
-        String text1 = input.nextLine();
-        System.out.println("Klaar " + text1);
+
+        String text1; // 1) declareren
+        text1 = input.nextLine(); // 2a) gebruiken: write
+        String output = "Klaar " + text1; // 2b) gebruiken: read
+
+        System.out.println(output);
     }
 }

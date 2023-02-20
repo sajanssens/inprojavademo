@@ -7,7 +7,7 @@ public class HelloWorldTest {
     @Test
     void roepPrintAan(){
         HelloWorld myFirstApp = new HelloWorld();
-        myFirstApp.print();
+        myFirstApp.wieBenIk();
     }
 
 }
