@@ -10,7 +10,7 @@ class PrimitivesDemoTest {
         int autos = 4;
         int minimumVoorraad = 16;
         // We verdubbelen het aantal auto's
-        // In de println autos*2
+        // In de println auto's * 2
         // Wat verwacht je?
         System.out.println((wielen - minimumVoorraad) / autos * 2);
         System.out.println(((wielen - minimumVoorraad) / autos) * 2);
@@ -22,9 +22,10 @@ class PrimitivesDemoTest {
         int tijd = 22;
         int uren = 5;
         int nieuweTijd = (tijd + uren) % 24; // 27 / 24 = 1 rest 3
+
         System.out.println(nieuweTijd);
 
-        System.out.println( 3 * 11 % 3);
+        System.out.println(3 * 11 % 3);
         System.out.println((3 * 11) % 3);  //0
     }
 }
