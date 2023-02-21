@@ -14,7 +14,14 @@ public class PrimitivesDemo {
         long grootGetal = 9223372036854775800L; //  64  bits = -(heelveel-1)..heelveel
         float koorts = 37.8F; // 32 bits floating point = ???
         double koorts2 = 37.8;// 64 bits floating point
+        boolean simple = true;
+
+        // complexe logica
         boolean isBramGek = temperature < 5 && koorts > 38.0;
+        boolean allesIsOke = !isBramGek; //assignment statement
+        if (allesIsOke) {
+            System.out.println("Alles is oke!");
+        }
 
         // nooit double gebruiken voor geld!!
         System.out.println(0.59 + 0.33); // fout!!!
