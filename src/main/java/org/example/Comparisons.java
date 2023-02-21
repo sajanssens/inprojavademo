@@ -6,11 +6,14 @@ public class Comparisons {
 
     public void demo(int temperatuur, String message) {
         // comparison of reference types: use, equals, compareto, contains, ....
-        if (message.equals("") ) { // message == ""
+        if (!message.equals("")) { // message != ""
             System.out.println(message);
         }
 
-        if(message.contains("!")){
+        int lastIndex = message.length() - 1;
+        char lastChar = message.charAt(lastIndex);
+
+        if (lastChar == '!') {
             System.out.println("Niet zo schreeuwen!!!!!!");
         }
 
@@ -32,8 +35,5 @@ public class Comparisons {
         return new Random().nextInt(100);
     }
 
-    public void assigment() {
-        int temperatuur = 20;
-        int watIsHiervanDeWaarde = (temperatuur = 0);
-    }
+
 }
