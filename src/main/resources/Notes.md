@@ -19,3 +19,4 @@ Hallo <jenaam>!
 
 8 bits = 2^8 mogelijkheden = 256
 waardes: -128 .. 0 .. 127
+
