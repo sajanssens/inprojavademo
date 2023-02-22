@@ -15,13 +15,15 @@ public class Cijferadministratie {
 
         String input = "";
         int aantal = 0;
-        System.out.print("Cijfer: ");
 
-        while (!(input = scanner.nextLine()).equals("stop") && aantal < 100) {
+        do {
             System.out.print("Cijfer: ");
+            input = scanner.nextLine();
+            if (input.equals("stop")) break;
+
             cijfers[aantal] = Float.parseFloat(input);
             aantal++;
-        }
+        } while (aantal < 100);
 
         float totaal = 0.0f;
         for (int i = 0; i < aantal; i++) {
@@ -29,7 +31,6 @@ public class Cijferadministratie {
         }
 
         System.out.println("Je staat gemiddeld: " + (totaal / aantal));
-
         System.out.println("Bye bye!");
     }
 }
