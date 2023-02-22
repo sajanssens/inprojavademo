@@ -52,4 +52,6 @@ class ComparisonsTest {
         IOException e = Assertions.assertThrows(IOException.class, () -> target.demo(0, swearWords));
         Assertions.assertTrue(e.getMessage().contains("Scheldwoorden"));
     }
+
+
 }
