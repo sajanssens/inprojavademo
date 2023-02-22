@@ -8,8 +8,8 @@ import java.sql.Statement;
 
 public class DatabaseDemo {
     static final String DB_URL = "jdbc:mysql://localhost/inprojava";
-    static final String USER = "admin";
-    static final String PASS = "admin";
+    static final String USER = "root";
+    static final String PASS = "root";
     static final String QUERY = "SELECT id, naam, leeftijd FROM Persoon";
 
     public static void main(String[] args) throws SQLException {
@@ -21,7 +21,7 @@ public class DatabaseDemo {
             // Retrieve by column name
             System.out.print("ID: " + rs.getInt("id"));
             System.out.print(", Naam: " + rs.getString("naam"));
-            System.out.print(", Leeftijd: " + rs.getInt("leeftijd"));
+            System.out.println(", Leeftijd: " + rs.getInt("leeftijd"));
         }
 
         conn.close();
