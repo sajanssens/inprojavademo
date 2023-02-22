@@ -33,4 +33,18 @@ public class Persoon {
     public void setNaam(String naam) {
         this.naam = naam;
     }
+
+    public String toString() {
+        return "Hallo, ik ben " + this.naam + " en ik ben " + this.leeftijd + " jaar oud.";
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        Persoon other = (Persoon) o;
+        if (this.naam.equals(other.naam) && this.leeftijd == other.leeftijd) {
+            return true;
+        } else {
+            return false;
+        }
+    }
 }
